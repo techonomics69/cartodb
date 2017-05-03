@@ -1,6 +1,6 @@
 {
   "name": "cartodb-ui",
-  "version": "4.6.90",
+  "version": "4.6.91",
   "dependencies": {
     "abbrev": {
       "version": "1.1.0",
@@ -335,7 +335,7 @@
         "cartodb.js": {
           "version": "4.0.0-alpha.1",
           "from": "cartodb/cartodb.js#SMOKES-render-view-after-first-reload",
-          "resolved": "git://github.com/cartodb/cartodb.js.git#d8422f76145cf88feb750e4dc0402e345607e738"
+          "resolved": "git://github.com/cartodb/cartodb.js.git#e9b825af9c00ba72c48341a8a8e28b09284b062a"
         }
       }
     },
@@ -347,7 +347,7 @@
     "cartodb.js": {
       "version": "4.0.0-alpha.1",
       "from": "cartodb/cartodb.js#SMOKES-render-view-after-first-reload",
-      "resolved": "git://github.com/cartodb/cartodb.js.git#d8422f76145cf88feb750e4dc0402e345607e738",
+      "resolved": "git://github.com/cartodb/cartodb.js.git#e9b825af9c00ba72c48341a8a8e28b09284b062a",
       "dependencies": {
         "babel-runtime": {
           "version": "6.18.0",
