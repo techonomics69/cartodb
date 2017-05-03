@@ -1,6 +1,6 @@
 {
   "name": "cartodb-ui",
-  "version": "4.6.85",
+  "version": "4.6.86",
   "dependencies": {
     "abbrev": {
       "version": "1.1.0",
@@ -116,9 +116,9 @@
       "resolved": "https://registry.npmjs.org/aws4/-/aws4-1.6.0.tgz"
     },
     "babel-runtime": {
-      "version": "6.18.0",
-      "from": "babel-runtime@6.18.0",
-      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.18.0.tgz"
+      "version": "6.11.6",
+      "from": "babel-runtime@6.11.6",
+      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.11.6.tgz"
     },
     "backbone": {
       "version": "1.2.3",
@@ -128,7 +128,7 @@
     "backbone-forms": {
       "version": "0.14.0",
       "from": "backbone-forms@0.14.0",
-      "resolved": "http://registry.npmjs.org/backbone-forms/-/backbone-forms-0.14.0.tgz"
+      "resolved": "https://registry.npmjs.org/backbone-forms/-/backbone-forms-0.14.0.tgz"
     },
     "backbone-model-file-upload": {
       "version": "1.0.0",
@@ -334,8 +334,8 @@
       "dependencies": {
         "cartodb.js": {
           "version": "4.0.0-alpha.1",
-          "from": "cartodb/cartodb.js#SMOKES-render-view-after-first-reload",
-          "resolved": "git://github.com/cartodb/cartodb.js.git#1358c3fdf734af9016cb2e196b2ec9f30990ce2b",
+          "from": "cartodb/cartodb.js#render-view-after-first-reload",
+          "resolved": "git://github.com/cartodb/cartodb.js.git#2dba2539d1bd938aabb2e1bbf6912db61c7f5cfa"
         }
       }
     },
@@ -347,12 +347,41 @@
     "cartodb.js": {
       "version": "4.0.0-alpha.1",
       "from": "cartodb/cartodb.js#SMOKES-render-view-after-first-reload",
-      "resolved": "git://github.com/cartodb/cartodb.js.git#1358c3fdf734af9016cb2e196b2ec9f30990ce2b",
+      "resolved": "git://github.com/cartodb/cartodb.js.git#5356c7749a3cce2821110a04a7aed33418941f0d",
       "dependencies": {
+        "babel-runtime": {
+          "version": "6.18.0",
+          "from": "babel-runtime@6.18.0",
+          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.18.0.tgz"
+        },
+        "tangram-reference": {
+          "version": "1.0.17",
+          "from": "tangram-reference@1.0.17",
+          "resolved": "https://registry.npmjs.org/tangram-reference/-/tangram-reference-1.0.17.tgz"
+        },
         "tangram.cartodb": {
           "version": "0.4.0",
           "from": "cartodb/tangram.cartodb#events-release",
-          "resolved": "git://github.com/cartodb/tangram.cartodb.git#5e4fca09070d3ae8691b99f5d788df521a06fd3e"
+          "resolved": "git://github.com/cartodb/tangram.cartodb.git#5e4fca09070d3ae8691b99f5d788df521a06fd3e",
+          "dependencies": {
+            "regenerator-runtime": {
+              "version": "0.10.5",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz"
+            },
+            "tangram-cartocss": {
+              "version": "0.5.2",
+              "from": "cartodb/tangram-carto#master",
+              "resolved": "git://github.com/cartodb/tangram-carto.git#92ff6fe32743fdee2d296a1512158acef7923d9c",
+              "dependencies": {
+                "babel-runtime": {
+                  "version": "6.22.0",
+                  "from": "babel-runtime@6.22.0",
+                  "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.22.0.tgz"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -1292,7 +1321,7 @@
     },
     "md5": {
       "version": "2.2.1",
-      "from": "md5@>=2.2.1 <3.0.0",
+      "from": "md5@2.2.1",
       "resolved": "https://registry.npmjs.org/md5/-/md5-2.2.1.tgz"
     },
     "miller-rabin": {
@@ -1557,7 +1586,7 @@
     "queue-async": {
       "version": "1.2.1",
       "from": "queue-async@1.2.1",
-      "resolved": "http://registry.npmjs.org/queue-async/-/queue-async-1.2.1.tgz"
+      "resolved": "https://registry.npmjs.org/queue-async/-/queue-async-1.2.1.tgz"
     },
     "quote-stream": {
       "version": "1.0.2",
@@ -1908,31 +1937,48 @@
       }
     },
     "tangram-cartocss": {
-      "version": "0.5.2",
-      "from": "cartodb/tangram-carto#master",
-      "resolved": "git://github.com/cartodb/tangram-carto.git#92ff6fe32743fdee2d296a1512158acef7923d9c",
-      "dependencies": {
-        "babel-runtime": {
-          "version": "6.22.0",
-          "from": "babel-runtime@6.22.0",
-          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.22.0.tgz"
-        },
-        "regenerator-runtime": {
-          "version": "0.10.4",
-          "from": "regenerator-runtime@>=0.10.0 <0.11.0",
-          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.4.tgz"
-        }
-      }
+      "version": "0.3.3",
+      "from": "tangram-cartocss@>=0.3.3 <0.4.0",
+      "resolved": "https://registry.npmjs.org/tangram-cartocss/-/tangram-cartocss-0.3.3.tgz"
     },
     "tangram-reference": {
-      "version": "1.0.17",
-      "from": "tangram-reference@1.0.17",
-      "resolved": "https://registry.npmjs.org/tangram-reference/-/tangram-reference-1.0.17.tgz"
+      "version": "1.0.14",
+      "from": "tangram-reference@1.0.14",
+      "resolved": "https://registry.npmjs.org/tangram-reference/-/tangram-reference-1.0.14.tgz"
     },
     "tangram.cartodb": {
       "version": "0.3.1",
       "from": "cartodb/tangram.cartodb#master",
-      "resolved": "git://github.com/cartodb/tangram.cartodb.git#538136b79f0f401ba806d75fe2f9df534bb99017"
+      "resolved": "git://github.com/cartodb/tangram.cartodb.git#538136b79f0f401ba806d75fe2f9df534bb99017",
+      "dependencies": {
+        "babel-runtime": {
+          "version": "6.18.0",
+          "from": "babel-runtime@6.18.0",
+          "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.18.0.tgz"
+        },
+        "tangram-cartocss": {
+          "version": "0.5.2",
+          "from": "cartodb/tangram-carto#master",
+          "resolved": "git://github.com/cartodb/tangram-carto.git#92ff6fe32743fdee2d296a1512158acef7923d9c",
+          "dependencies": {
+            "babel-runtime": {
+              "version": "6.22.0",
+              "from": "babel-runtime@6.22.0",
+              "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.22.0.tgz"
+            },
+            "regenerator-runtime": {
+              "version": "0.10.5",
+              "from": "regenerator-runtime@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz"
+            }
+          }
+        },
+        "tangram-reference": {
+          "version": "1.0.17",
+          "from": "tangram-reference@1.0.17",
+          "resolved": "https://registry.npmjs.org/tangram-reference/-/tangram-reference-1.0.17.tgz"
+        }
+      }
     },
     "temporary": {
       "version": "0.0.8",
