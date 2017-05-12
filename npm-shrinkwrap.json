@@ -1,6 +1,6 @@
 {
   "name": "cartodb-ui",
-  "version": "4.6.100",
+  "version": "4.6.101",
   "dependencies": {
     "abbrev": {
       "version": "1.1.0",
@@ -128,7 +128,7 @@
     "backbone-forms": {
       "version": "0.14.0",
       "from": "backbone-forms@0.14.0",
-      "resolved": "https://registry.npmjs.org/backbone-forms/-/backbone-forms-0.14.0.tgz"
+      "resolved": "http://registry.npmjs.org/backbone-forms/-/backbone-forms-0.14.0.tgz"
     },
     "backbone-model-file-upload": {
       "version": "1.0.0",
@@ -334,8 +334,8 @@
       "dependencies": {
         "cartodb.js": {
           "version": "4.0.0-alpha.1",
-          "from": "cartodb/cartodb.js#SMOKES-render-view-after-first-reload",
-          "resolved": "git://github.com/cartodb/cartodb.js.git#4add4241462dec7f6ba74aabab9c328aefa0a00a"
+          "from": "cartodb/cartodb.js#render-view-after-first-reload",
+          "resolved": "git://github.com/cartodb/cartodb.js.git#92ed755efb91fa6fc8b2d2e54a0d3d0ad4a7b765"
         }
       }
     },
@@ -1555,7 +1555,7 @@
     "queue-async": {
       "version": "1.2.1",
       "from": "queue-async@1.2.1",
-      "resolved": "https://registry.npmjs.org/queue-async/-/queue-async-1.2.1.tgz"
+      "resolved": "http://registry.npmjs.org/queue-async/-/queue-async-1.2.1.tgz"
     },
     "quote-stream": {
       "version": "1.0.2",
