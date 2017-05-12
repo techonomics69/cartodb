@@ -335,7 +335,7 @@
         "cartodb.js": {
           "version": "4.0.0-alpha.1",
           "from": "cartodb/cartodb.js#SMOKES-render-view-after-first-reload",
-          "resolved": "git://github.com/cartodb/cartodb.js.git#4add4241462dec7f6ba74aabab9c328aefa0a00a"
+          "resolved": "git://github.com/cartodb/cartodb.js.git#c2c0bc7379c3ef172ab5b49b9b303285b6f2daf0"
         }
       }
     },
@@ -347,7 +347,7 @@
     "cartodb.js": {
       "version": "4.0.0-alpha.1",
       "from": "cartodb/cartodb.js#SMOKES-render-view-after-first-reload",
-      "resolved": "git://github.com/cartodb/cartodb.js.git#4add4241462dec7f6ba74aabab9c328aefa0a00a"
+      "resolved": "git://github.com/cartodb/cartodb.js.git#c2c0bc7379c3ef172ab5b49b9b303285b6f2daf0"
     },
     "caseless": {
       "version": "0.11.0",
