@@ -334,8 +334,8 @@
       "dependencies": {
         "cartodb.js": {
           "version": "4.0.0-alpha.1",
-          "from": "cartodb/cartodb.js#render-view-after-first-reload",
-          "resolved": "git://github.com/cartodb/cartodb.js.git#92ed755efb91fa6fc8b2d2e54a0d3d0ad4a7b765"
+          "from": "cartodb/cartodb.js#SMOKES-render-view-after-first-reload",
+          "resolved": "git://github.com/cartodb/cartodb.js.git#4add4241462dec7f6ba74aabab9c328aefa0a00a"
         }
       }
     },
