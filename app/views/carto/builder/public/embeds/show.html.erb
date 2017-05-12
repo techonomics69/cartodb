@@ -42,6 +42,19 @@
   <%= javascript_include_tag 'vendor_editor3.js' %>
   <%= javascript_include_tag 'common_editor3.js' %>
   <%= javascript_include_tag 'public_editor3.js' %>
-
+  <script>
+    (function () {
+      <% if Cartodb.config[:graphite_public] %>
+        if (location.protocol.indexOf('https') === -1) {
+          jQuery.getScript('<%= javascript_path "statsc.js" %>', function(ready) {
+            statsc.connect('http://<%= Cartodb.config[:graphite_public]['host'] %>:<%= Cartodb.config[:graphite_public]['port'] %>/');
+            cartodb.core.Profiler.backend(function () {
+              statsc.send.apply(statsc, arguments);
+            });
+          });
+        }
+      <% end %>
+    }());
+  </script>
   <%= insert_google_analytics('embeds', true) %>
 <% end %>
